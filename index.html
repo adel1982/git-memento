@@ -137,6 +137,57 @@
       </tbody>
     </table>
 
+    <!-- AJOUT -->
+    <table class="table branches">
+      <tbody>
+        <tr class="cat-command">
+          <th class="cat-title"><i class="fas fa-plus"></i> Ajout</th>
+          <th class="cat-title"></th>
+          <th class="cat-title"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title">
+            Ajoute les fichiers au fur et à mesure
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Ajouter les fichiers au fur et à mesure
+          </td>
+          <td class="git-command-data">git add -p</td>
+          <td class="git-command-data">
+            <button name="git add -p" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title">
+            Ajouter tous les fichiers avec l'extension .html
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Ajouter tous les fichiers avec l'extension .html
+          </td>
+          <td class="git-command-data">git add *.html</td>
+          <td class="git-command-data">
+            <button name="git add *.html" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+        
+
+      </tbody>
+    </table>
+
     <!-- LOGS -->
     <table class="table logs">
       <tbody>
@@ -224,6 +275,56 @@
             </button>
           </td>
         </tr>
+      </tbody>
+    </table>
+
+    <!-- BLAMER -->
+    <table class="table logs">
+      <tbody>
+        <tr class="cat-command">
+          <th class="cat-title"><i class="fas fa-bullhorn"></i> Blamer</th>
+          <th class="cat-title"></th>
+          <th class="cat-title"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title">
+            Obtenir des informations sur un fichier
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Obtenir des informations sur un fichier
+          </td>
+          <td class="git-command-data">git blame (nom du fichier)</td>
+          <td class="git-command-data">
+            <button name="git blame (nom du fichier)" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title">
+            Afficher les informations des lignes 10 à 20
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Afficher les informations des lignes 10 à 20
+          </td>
+          <td class="git-command-data">git blame -L 10,20 (nom du fichier)</td>
+          <td class="git-command-data">
+            <button name="git blame -L 10,20 (nom du fichier)" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
       </tbody>
     </table>
 
@@ -394,6 +495,37 @@
           </td>
         </tr>
 
+
+      </tbody>
+    </table>
+
+    <!-- AIDE & CONFIG -->
+    <table class="table stash">
+      <tbody>
+        <tr class="cat-command">
+          <th class="cat-title"><i class="far fa-question-circle"></i> Aide</th>
+          <th class="cat-title"></th>
+          <th class="cat-title"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title">
+            Obtenir des informations sur une commande
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Obtenir des informations sur une commande
+          </td>
+          <td class="git-command-data">git help (commande)</td>
+          <td class="git-command-data">
+            <button name="git help (commande)" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
 
       </tbody>
     </table>
