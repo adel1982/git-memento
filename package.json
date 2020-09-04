@@ -9,6 +9,6 @@
     "sass": "node-sass -w --output-style compressed scss -o css --source-map-root file://${PWD}/ --source-map-embed true"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
