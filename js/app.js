@@ -1,3 +1,16 @@
+function copyToCommand() {
+  
+  const commandToCopy = document.querySelector(".git-command-toCopy");
+  const commandToPlace = document.querySelector(".git-desc-command-mod");  
+  
+  const contentToCopy = commandToPlace.innerText = commandToCopy.innerHTML;
+  
+}
+copyToCommand()
+
+
+
+
 // Credit for copyToCliboard(text) function: https://stackoverflow.com/a/33928558
 
 // Copies a string to the clipboard. Must be called from within an
