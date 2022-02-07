@@ -31,6 +31,20 @@ function fetchGitCommand(url, table) {
         `;
       }
 
+
+      const copyBtns = document.querySelectorAll(".toCopy");
+
+      //console.log(copyBtns);
+
+      copyBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const attr = btn.getAttribute("name");
+          navigator.clipboard.writeText(attr);
+          console.log(attr);
+        })
+      });
+
       const insertContent = document.querySelector(table);
 
       insertContent.insertAdjacentHTML("beforeend", output);
@@ -46,26 +60,19 @@ fetchGitCommand("../data/clean.json", ".clean");
 fetchGitCommand("../data/stash.json", ".stash");
 fetchGitCommand("../data/aide.json", ".aide");
 
-//------------------------------//
 
-const copyBtn = document.querySelectorAll(".toCopy");
+// for (let i = 0; i < copyBtn.length; i++) {
+//   copyBtn[i].addEventListener("click", function (e) {
+//     const attr = copyBtn[i].getAttribute("name");
+//     attr.document.execCommand("copy");
 
-console.log(copyBtn);
+//     // Indicate last copied item
+//     for (let i = 0; i < copyBtn.length; i++) {
+//       copyBtn[i].innerHTML = '<i class="fas fa-clipboard"></i>Copier';
+//       copyBtn[i].classList.remove("copied");
+//     }
+//     this.innerHTML = '<i class="fas fa-check"></i>Copier';
 
-
-
-for (let i = 0; i < copyBtn.length; i++) {
-  copyBtn[i].addEventListener("click", function (e) {
-    const attr = copyBtn[i].getAttribute("name");
-    navigator.clipboard.writeText(attr);
-
-    // Indicate last copied item
-    for (let i = 0; i < copyBtn.length; i++) {
-      copyBtn[i].innerHTML = '<i class="fas fa-clipboard"></i>Copier';
-      copyBtn[i].classList.remove("copied");
-    }
-    this.innerHTML = '<i class="fas fa-check"></i>Copier';
-
-    this.classList.add("copied");
-  });
-}
+//     this.classList.add("copied");
+//   });
+// }
