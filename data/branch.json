@@ -1,0 +1,30 @@
+[
+	{
+		"def": "Lister les branches locales",
+		"command": "git branch"
+	},
+  {
+    "def": "Créer une branche et switcher dessus",
+    "command": "git checkout -b (nom-branche)"
+  },
+  {
+    "def": "Changer le nom d'une branche",
+    "command": "git branch -m (ancien-nom) (nouveau-nom)"
+  },
+  {
+    "def": "Switcher vers une autre branche",
+    "command": "git checkout (nom-branche)"
+  },
+  {
+    "def": "Renommer la branche courante",
+    "command": "git branch -m (nouveau-nom)"
+  },
+  {
+    "def": "Supprimer une branche en local",
+    "command": "git branch -d (nom-branche)"
+  },
+  {
+    "def": "Supprimer une branche en local peut importe si elle a été mergé ou pas",
+    "command": "git branch -D (nom-branche)"
+  }
+]
