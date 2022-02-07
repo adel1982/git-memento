@@ -1,0 +1,10 @@
+[
+  {
+    "def": "Sauvegarder les modifications + message",
+    "command": "git stash save (message) && git stash"
+  },
+  {
+    "def": "Liste des stashes",
+    "command": "git stash list"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "def": "Annuler toutes les modifications locales",
+    "command": "git checkout --"
+  },
+  {
+    "def": "Retirer un fichier suivi",
+    "command": "git reset HEAD (nom fichier)"
+  },
+  {
+    "def": "Supprimez tous les fichiers non suivis",
+    "command": "git clean -f"
+  },
+  {
+    "def": "Supprimez tous les fichiers et répertoires non suivis",
+    "command": "git clean -df"
+  }
+]

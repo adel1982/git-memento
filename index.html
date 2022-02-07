@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,439 +24,80 @@
 	<div class="container">
 		<header>
 			<img src="img/logo.png" class="logo" alt="Logo de Git Memento" width="60" height="67">
-			<h1 class="title-01">git<span> Memento</span></h1>
+			<h1 class="title-01">git<span>Memento</span></h1>
 		</header>
 
 		<p class="text-01">
 			Une sélection de commande pour git
 		</p>
 
-		<!-- BRANCHES -->
-		<table class="table branches">
-			<tbody>
-				<!-- TITRE DE SECTION // BRANCHES -->
+		<table class="table">
+			<tbody class="branches">
 				<tr class="cat-command">
 					<th class="cat-title"><i class="fas fa-code-branch"></i>Branches</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Lister les branches locales</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git branch
-					</td>
-					<td class="git-command-data">
-						<button name="git branch" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Créer une branche et switcher dessus</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git checkout -b (nom-branche)
-					</td>
-					<td class="git-command-data">
-						<button name="git checkout -b (nom-branche)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Changer le nom d'une branche</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git branch -m (ancien-nom) (nouveau-nom)
-					</td>
-					<td class="git-command-data">
-						<button name="git branch -m (ancien-nom) (nouveau-nom)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy"></td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git checkout (nom-branche)
-					</td>
-					<td class="git-command-data">
-						<button name="git checkout (nom-branche)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Renommer la branche courante</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git branch -m (ancien nom) (nouveau-nom)
-					</td>
-					<td class="git-command-data">
-						<button name="git branch -m (nouveau-nom)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Supprimer une branche en local</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git branch -d (nom-branche)
-					</td>
-					<td class="git-command-data">
-						<button name="git branch -d (nom-branche)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Supprimer une branche en local peut importe si elle a été mergé ou pas</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git branch -D (nom-branche)
-					</td>
-					<td class="git-command-data">
-						<button name="git branch -D (nom-branche)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-
 			</tbody>
 		</table>
 
-		<!-- COMMIT  -->
-		<table class="table branches">
-			<tbody>
-				<!-- TITRE DE SECTION // COMMIT  -->
+		<table class="table">
+			<tbody class="commit">
 				<tr class="cat-command">
 					<th class="cat-title"><i class="fas fa-angle-right"></i>Commit</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Corriger une erreur dans un message de commit
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git commit --amend -m (Nouveau message)
-					</td>
-					<td class="git-command-data">
-						<button name="git commit --amend -m (Nouveau message)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Ajouter les fichiers au fur et à mesure
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git add -p
-					</td>
-					<td class="git-command-data">
-						<button name="git add -p" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data">
-						Ajouter tous les fichiers avec l'extension .html
-					</td>
-					<td class="git-command-data git-command-toCopy">
-						<span class="git-desc-command-mod"></span>
-						git add *.html
-					</td>
-					<td class="git-command-data">
-						<button name="git add *.html" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
 			</tbody>
 		</table>
 
-		<!-- LOGS -->
-		<table class="table logs">
-			<tbody>
+		<table class="table">
+			<tbody class="logs">
 				<tr class="cat-command">
 					<th class="cat-title"><i class="far fa-sticky-note"></i>Logs</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data">
-						Historique des commits sur une seule ligne
-					</td>
-					<td class="git-command-data git-command-toCopy">
-						<span class="git-desc-command-mod"></span>
-						git log --oneline
-					</td>
-					<td class="git-command-data">
-						<button name="git log --oneline" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Historique des 2 derniers commits</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git log -2
-					</td>
-					<td class="git-command-data">
-						<button name="git log -2" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Afficher Toutes les modifications en locales</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git diff
-					</td>
-					<td class="git-command-data">
-						<button name="git diff" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
 			</tbody>
 		</table>
-		<!-- BLAMER -->
-		<table class="table logs">
-			<tbody>
+
+		<table class="table">
+			<tbody class="blame">
 				<tr class="cat-command">
-					<th class="cat-title"><i class="fas fa-bullhorn"></i> Blamer</th>
+					<th class="cat-title"><i class="fas fa-bullhorn"></i>Blamer</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data">
-						Obtenir des informations sur un fichier
-					</td>
-					<td class="git-command-data git-command-toCopy">
-						<span class="git-desc-command-mod"></span>
-						git blame (nom du fichier)
-					</td>
-					<td class="git-command-data">
-						<button name="git blame (nom du fichier)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Afficher les informations des lignes 10 à 20
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git blame -L 10,20 (nom du fichier)
-					</td>
-					<td class="git-command-data">
-						<button name="git blame -L 10,20 (nom du fichier)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
 			</tbody>
 		</table>
 
-		<!-- NETTOYER -->
-		<table class="table clean">
-			<tbody>
+		<table class="table">
+			<tbody class="clean">
 				<tr class="cat-command">
-					<th class="cat-title"><i class="fas fa-broom"></i> Nettoyer</th>
+					<th class="cat-title"><i class="fas fa-broom"></i>Nettoyer</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Supprimez tous les fichiers non suivis
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git clean -f
-					</td>
-					<td class="git-command-data">
-						<button name="git clean -f" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Supprimez tous les fichiers et répertoires non suivis</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git clean -df
-					</td>
-					<td class="git-command-data">
-						<button name="git clean -df" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Modification sur un fichier</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git diff (nom fichier)
-					</td>
-					<td class="git-command-data">
-						<button name="git diff (nom fichier)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Annuler toutes les modifications locales</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git checkout -- .
-					</td>
-					<td class="git-command-data">
-						<button name="git checkout -- ." class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">Retirer un fichier suivi</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git reset HEAD (nom fichier)
-					</td>
-					<td class="git-command-data">
-						<button name="git reset HEAD (nom fichier)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
 				</tr>
 			</tbody>
 		</table>
 
-		<!-- STASHES -->
-		<table class="table stash">
-			<tbody>
+		<table class="table">
+			<tbody class="stash">
 				<tr class="cat-command">
 					<th class="cat-title"><i class="fas fa-copy"></i>Stashes</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Sauvegarder les modifications + message
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod "></span>
-						git stash save (message) && git stash
-					</td>
-					<td class="git-command-data">
-						<button name="git stash save (message) && git stash" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Liste des stashes
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git stash list
-					</td>
-					<td class="git-command-data">
-						<button name="git stash list" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
-
 			</tbody>
 		</table>
 
-		<!-- AIDE & CONFIG -->
-		<table class="table stash">
-			<tbody>
+		<table class="table">
+			<tbody class="aide">
 				<tr class="cat-command">
 					<th class="cat-title"><i class="far fa-question-circle"></i>Aide</th>
 					<th class="cat-title"></th>
 					<th class="cat-title"></th>
 				</tr>
-
-				<tr class="alt-header"></tr>
-				<tr class="git-command-row">
-					<td class="git-command-data git-command-toCopy">
-						Obtenir des informations sur une commande
-					</td>
-					<td class="git-command-data">
-						<span class="git-desc-command-mod"></span>
-						git help (commande)
-					</td>
-					<td class="git-command-data">
-						<button name="git help (commande)" class="toCopy" type="button">
-							<i class="fas fa-clipboard"></i>Copier
-						</button>
-					</td>
-				</tr>
-
 			</tbody>
 		</table>
 

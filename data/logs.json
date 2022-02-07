@@ -1,0 +1,14 @@
+[
+  {
+    "def": "Historique des commits sur une seule ligne",
+    "command": "git log --oneline"
+  },
+  {
+    "def": "Historique des 2 derniers commits",
+    "command": "git log -2"
+  },
+  {
+    "def": "Afficher Toutes les modifications en locales",
+    "command": "git diff"
+  }
+]

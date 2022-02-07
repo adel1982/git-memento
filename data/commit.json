@@ -1,0 +1,14 @@
+[
+  {
+    "def": "Corriger une erreur dans un message de commit",
+    "command": "git commit --amend -m (Nouveau message)"
+  },
+  {
+    "def": "Ajouter les fichiers au fur et à mesure",
+    "command": "git add -p"
+  },
+  {
+    "def": "Ajouter tous les fichiers avec l'extension .html",
+    "command": "git add *.html"
+  }
+]

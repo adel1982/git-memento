@@ -1,0 +1,10 @@
+[
+  {
+    "def": "Obtenir des informations sur un fichier",
+    "command": "git blame (nom du fichier)"
+  },
+  {
+    "def": "Afficher les informations des lignes 10 à 20",
+    "command": "git blame -L 10,20 (nom du fichier)"
+  }
+]
