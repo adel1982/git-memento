@@ -1,8 +1,7 @@
 function fetchGitCommand(url, table) {
+  // XHR
   let http = new XMLHttpRequest();
-
   http.open("get", url, true);
-
   http.send();
 
   http.onload = function () {
@@ -13,7 +12,6 @@ function fetchGitCommand(url, table) {
 
       for (let item of commands) {
         output += `
-        
             <tr class="alt-header"></tr>
             <tr class="git-command-row">
               <td class="git-command-data git-command-toCopy">${item.def}</td>
@@ -31,23 +29,21 @@ function fetchGitCommand(url, table) {
         `;
       }
 
+      // AFFICHAGE DES COMMANDES
+      const insertContent = document.querySelector(table);
+      insertContent.insertAdjacentHTML("beforeend", output);
 
+      // COPIE DE LA COMMANDE DANS LE CLIPBOARD
       const copyBtns = document.querySelectorAll(".toCopy");
-
-      //console.log(copyBtns);
 
       copyBtns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
-          e.preventDefault();
+          //e.preventDefault();
           const attr = btn.getAttribute("name");
           navigator.clipboard.writeText(attr);
           console.log(attr);
-        })
+        });
       });
-
-      const insertContent = document.querySelector(table);
-
-      insertContent.insertAdjacentHTML("beforeend", output);
     }
   };
 }
@@ -59,7 +55,6 @@ fetchGitCommand("../data/blame.json", ".blame");
 fetchGitCommand("../data/clean.json", ".clean");
 fetchGitCommand("../data/stash.json", ".stash");
 fetchGitCommand("../data/aide.json", ".aide");
-
 
 // for (let i = 0; i < copyBtn.length; i++) {
 //   copyBtn[i].addEventListener("click", function (e) {
