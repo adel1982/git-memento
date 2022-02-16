@@ -37,11 +37,16 @@ function fetchGitCommand(url, table) {
       const copyBtns = document.querySelectorAll(".toCopy");
 
       copyBtns.forEach((btn) => {
+        
         btn.addEventListener("click", (e) => {
-          //e.preventDefault();
+          btn.classList.remove("copied");
+          btn.innerHTML = '<i class="fas fa-clipboard"></i>Copier';
+
           const attr = btn.getAttribute("name");
           navigator.clipboard.writeText(attr);
-          console.log(attr);
+
+          btn.classList.add("copied");
+          btn.innerHTML = '<i class="fas fa-check"></i>Copier';
         });
       });
     }
